@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+  class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+
 
   # GET /users/1
   # GET /users/1.json
