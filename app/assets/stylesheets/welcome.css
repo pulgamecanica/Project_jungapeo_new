@@ -64,3 +64,12 @@ h5 {
 .clear {
   clear: both;
 }
+
+
+nav {
+  position: fixed;
+  text-align: center;
+  left: center;
+  top: 0;
+  width: 100%;
+}
