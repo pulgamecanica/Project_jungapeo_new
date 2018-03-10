@@ -14,6 +14,48 @@
       <br clear="all">
     </nav>
     <h5>Change Lenguage</h5>
-<h1>Hello this is galeria</h1>    
+<h1>Hello this is galeria</h1>
+<div class="chessboard">
+  <%=def chessboard
+  piezas_importantes = ['♖', '♘', '♗', '♕', '♔', '♗', '♘', '♖']
+  piezas_importantes_negras = ['♜', '♞', '♝', '♛', '♚', '♝', '♞', '♜']
+  espacios = "\n|\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|\t\t|"
+  (1..8).each do |num|
+    case num
+    when 1
+      piezas_importantes.each {|pieza| print "|\t#{pieza}\t"}
+      puts "|\tA"
+      puts
+    when 2
+      8.times {print "|\t♙\t"} 
+      puts "|\tB"
+    when 3
+      print espacios + "\tC"
+      puts
+    when 4
+      print espacios + "\tD"
+      puts 
+    when 5
+      print espacios + "\tE"
+      puts
+    when 6
+      print espacios
+      puts "\tF"
+      puts
+    when 7
+      8.times {print "|\t♟\t"}
+      puts "|\tG"
+      puts
+    when 8
+     piezas_importantes_negras.each {|pieza| print "|\t#{pieza}\t"}
+     puts "|\tH"
+     puts
+     puts
+     puts
+     puts " \t1\t \t2\t \t3\t \t4\t \t5\t \t6\t \t7\t \t8\t"
+   end
+ end
+end
+%>
 </body>
 	
